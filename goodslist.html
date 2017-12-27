@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>coolpad-商品列表</title>
+    <link rel="stylesheet" type="text/css" href="css/goodslist.css"/>
+    <link rel="stylesheet" type="text/css" href="css/common.css"/>
+    <link rel="stylesheet" href="font/iconfont.css"/>
+    <script src="https://cdn.bootcss.com/jquery/1.8.3/jquery.js"></script>   
+    <style type="text/css">
+        @media screen and (max-width:767px){
+            /* bannerlogo部分======================================== */
+            .header .logobox a img{
+                width:87px;
+                height:17px;
+            }
+            .header .logobox{
+                margin-top:15px;
+            }
+            /* 图部分---------------------------------------------- */
+            .picbox{
+                margin:0 auto;
+                width:425.9px;
+                overflow: visible;
+            }
+            .picbox a{
+                width:425.9px;
+                height:230px;
+                overflow: visible; 
+                position: relative;
+                left:0;    
+                transition: all 0.5s;                           
+            }
+            .picbox a:hover{
+                width:500px;
+                left:-33px;
+            }
+            .picbox a:hover .twopic{
+                width:500px;
+                height:230px;
+            }
+            .picbox a .twopic{
+                width:425.9px;
+                height:230px;
+                transition: all 0.5s;                                           
+            }
+
+            /* footer列表部分---------------------------------------------- */
+            .footer{
+                flex-direction: column;
+            }
+            .footer ul li{
+                display: none;
+                margin-left:10px;
+                font-size: 14px;
+                /* opacity: 0; */
+            }
+            .footer ul li:nth-child(2){
+                margin-top:15px;
+            }
+            .footer ul li:first-child{
+                display: block;
+                margin-left:10px;
+                border-bottom:1px solid #ccc;
+                padding-top:10px;
+                margin-bottom: 0;
+                margin-right:10px;
+                /* opacity: 1; */
+            }
+            .footer ul li span{
+                display: inline-block;
+                margin-right:10px;
+                font-size: 28px;
+                color:#555;
+                font-weight: 100;
+                line-height: 1;
+            }
+            .footer ul:first-child{
+                margin-left:0;
+            }
+            /* footer的div部分 */
+            .footer .fivebox{
+                border:none;
+                width:100%;
+                padding:0;
+                margin:0;
+                height:210px;
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+            }
+            .footer .fivebox p{
+                padding-left:20px;
+                padding-top:20px;
+                /* width:100%; */
+                position: absolute;
+                left:0;
+                top:0;
+            }
+            .footer .fivebox a{
+                position: static;
+                margin-top:30px;
+                /* padding: 0; */
+                margin-left:0;
+        
+            }
+            .footer .fivebox a .w1{
+                display: none;
+                position: static;
+            }
+            .footer .fivebox a .w{
+                position: static;
+            }
+            .footer .fivebox a .ewm{
+                position: static;
+                display: block;
+                width:80px;
+                margin-left:-25px;   
+                margin-top:10px;            
+            }
+            /* 版权================================================= */
+            .last{
+                padding-top:12px;
+                height:62px;
+            }
+            .last p span{
+                /* display: inline-block; */
+            }
+            .last p{
+                display: none;
+            }
+            .last p:last-child{
+                display: block;
+                padding:0 20px;
+                text-align: left;
+            }
+
+        
+        }
+    </style>
+</head>
+<body>
+        <div class="leftlargemovebox">
+                <div class="leftlogobox"><img src="img/logo.png" alt=""></div>
+                <p><a href="javascript:;">产品</a></p>
+                <p><a href="javascript:;">关于公司</a></p>
+                <p><a href="javascript:;">酷派新闻</a></p>
+                <p><a href="javascript:;">加入我们</a></p>
+                <p><a href="javascript:;">支持</a></p>
+                <p><img src="img/earth.png" alt=""> <span>+</span></p>   
+            </div>
+            <div class="rightlargemovebox">
+                <div class="rfog"><i class="iconfont icon-liebiao"></i></div>
+                <!-- 导航部分 -->        
+                <div class="header">
+                    <div class="list">
+                        <i class="iconfont icon-liebiao"></i>
+                    </div>
+                    <a class="delete" href="javascript:;">×</a>
+                    <div class="logobox">
+                        <a href="javascript:;"><img src="img/logo.png"></a>
+                    </div>
+                    <ul class="banner">
+                        <i class="iconfont icon-sousuo"></i>        
+                        <li class="one"><a href="javascript:;">产品</a></li>
+                        <li class="two"><a href="javascript:;">关于公司</a></li>
+                        <li class="three"><a href="javascript:;">支持</a></li>
+                        <li class="fourli">
+                            <a href="javascript:;"><img src="img/earth.png"></a>
+                            <table class="country">
+                                <tr>
+                                    <td><a href="javascript:;">美国</a></td>
+                                    <td><a href="javascript:;">欧洲</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:;">印度</a></td>
+                                    <td><a href="javascript:;">印尼</a></td>
+                                </tr>
+                                <tr>
+                                    <td><a href="javascript:;">越南</a></td>
+                                    <td><a href="javascript:;">Global</a></td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li class="bannerlastli"><input type="text" placeholder="搜索"/></li>
+                    </ul>
+                    <div class="inputbox">
+                        <input type="text" placeholder="搜索"/>
+                    </div>
+                </div>
+                <!-- 大轮播部分 -->
+                <div class="secone">
+                    <ul class="imglist">
+                        <li class="showimg"><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                        <li><a href="javascript:;"></a></li>
+                    </ul>
+                </div>
+                <!-- tu -->
+                <div class="picbox">
+                    <h2>产品 / 智能产品</h2>
+                    <a href="javascript:;"><img class="onepic" src="img/1.png" alt=""> <img class="twopic" src="img/14.jpg" alt=""></a>
+                    <a href="javascript:;"><img class="onepic" src="img/2.png" alt=""> <img class="twopic" src="img/15.jpg" alt=""></a>
+                    <a href="javascript:;"><img class="onepic" src="img/3.png" alt=""> <img class="twopic" src="img/16.jpg" alt=""></a>
+                    <a href="javascript:;"><img class="onepic" src="img/4.png" alt=""> <img class="twopic" src="img/17.jpg" alt=""></a>
+                </div>
+                <div class="picbox">
+                    <h2>产品 / 智能硬件</h2>
+                        <a href="javascript:;"> <img class="twopic" src="img/18.jpg" alt=""></a>
+                </div>
+
+            <!-- footer -->
+            <div class="footer">
+                <ul class="onelist">
+                    <li>推荐产品 <span>+</span></li>
+                    <li>儿童手表</li>
+                    <li>COOL M7</li>
+                    <li>酷玩6C</li>
+                    <li>酷玩6</li>
+                    <li>COOL CHANGER S1</li>
+                </ul>
+                <ul class="twolist">
+                    <li>关于公司 <span>+</span></li>
+                    <li>关于公司</li>
+                    <li>相关新闻</li>
+                    <li>加入我们</li>
+                </ul>
+                <ul class="threelist">
+                    <li>支持 <span>+</span></li>
+                    <li>服务网点</li>
+                </ul>
+                <ul class="fourlist">
+                    <li>联系我们 <span>+</span></li>
+                    <li>400-888-1388</li>
+                    <li>周一至周日8:30-18:30(仅收市话费)</li>
+                </ul>
+                <div class="fivebox">
+                    <p>关注我们</p>
+                    <a class="weixin" href="javascript:;">
+                        <img class="w1" src="img/weixin1.png"/>
+                        <img class="w" src="img/weixin.png"/>
+                        <img class="ewm" src="img/wx.jpg"/>
+                    </a>
+                    <a class="weibo" href="javascript:;">
+                        <img class="w1" src="img/weibo1.png"/>
+                        <img class="w" src="img/weibo.png"/>    
+                        <img class="ewm" src="img/wx.jpg"/>                
+                    </a>
+                </div>
+            </div>
+            <!-- 版权 -->
+            <div class="last">
+                <p>粤ICP备15075056号-1</p>
+                <p>Copyright © 2017, Coolpad Co., Ltd. All Right Reserved. 宇龙计算机通信科技（深圳）有限公司<span>|粤ICP备15075056号-1</span></p>
+                <p class="xyb">Copyright © 2017, Coolpad Co., Ltd. All Right Reserved. 宇龙计算机通信科技（深圳）有限公司|粤ICP备15075056号-1</p>
+            </div>
+                <!-- 固定定位 -->
+    <div class="asidfixed">
+        <a href="login.html">登录</a>
+        <a href="reg.html">注册</a>
+    </div>
+            <script src="js/js-function.js"></script>
+            <script src="js/autosimplelb.js"></script>
+            <script src="js/goodslist.js"></script>
+            <script src="js/common.js"></script>
+</body>
+</html>

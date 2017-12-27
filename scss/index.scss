@@ -1,0 +1,112 @@
+// secone------------------------------------------------------------------------------
+
+.secone{
+    width:100%;
+    position: relative;
+    overflow: hidden;
+    height:609px;    
+    .imglist{
+        width:7590px;
+        position: absolute;
+        left:0;
+        top:0;
+        li{
+            float: left;
+            overflow: hidden;
+            a{
+                display: block;
+                width:1265px;
+                height:609px;
+                background: url('../img/1.jpg') center center no-repeat;
+                background-size:1265px 609px;
+            }
+        }
+    }
+    .dots{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+        bottom:20px;
+        z-index: 1;
+        a{
+            float:left;
+            width:50px;
+            height:3px;
+            background: #bbb;
+            margin:0 5px;
+            .gray{
+                height:3px;
+                background: #333;
+                width:0; 
+            }
+        }
+    }
+}
+
+// sectwo------------------------------------------------------------------------------------------
+
+.sectwo{
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    justify-content: space-around;
+    margin-top:15px;
+    a{
+        position: relative;
+        display: block;
+        .img{
+            background: #333;
+            width:100%;
+        }
+        .ornament{
+            position: absolute;
+            top:40px;
+            left:50%;
+            transform: translateX(-50%);
+            p{
+                text-align:center;
+                color:#000;
+                font-size: 14px;
+                line-height: 30px;
+            }
+            img{
+                width:100%;
+            }
+        }
+
+    }
+}
+
+// secthree++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+.secthree{
+    display: flex;
+    width:100%;
+    justify-content: space-around;
+    margin-top:15px;
+    a{
+        display: block;
+        flex:1;
+        overflow: hidden;
+        height:225px;
+        position: relative;
+        &:hover .fog{
+            background: rgba(0,0,0,0)
+        }
+        .fog{
+            position: absolute;
+            width:200px;
+            height:135px;
+            background: rgba(0,0,0,.6);
+            color:white;
+            padding-left: 150px;
+            padding-top:90px;
+            font-size: 14px;
+            padding-right:80px;
+
+        }
+    }
+    a:nth-child(2){
+        margin:0 5px;
+    }
+}
