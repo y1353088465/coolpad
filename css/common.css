@@ -1,0 +1,268 @@
+html, body, div, p, ul, ol, li, dl, dd, dt, table, tr, td, form, input, h1, h2, h3, h5, h4, h6, img {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+body {
+  width: 100%;
+  overflow-x: hidden; }
+
+.header {
+  display: flex;
+  width: 100%;
+  background: #000;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 45px;
+  position: relative;
+  z-index: 1; }
+  .header .list {
+    display: none; }
+  .header .delete {
+    display: none;
+    font-size: 24px;
+    padding-bottom: 3px;
+    position: absolute;
+    color: #fff;
+    top: 5px;
+    left: 75%;
+    animation: yy 0.15s 3;
+    transform-origin: center center;
+    z-index: 1; }
+  .header .logobox {
+    margin-left: 150px;
+    margin-top: 12px; }
+    .header .logobox img {
+      width: 108px;
+      height: 22px; }
+    .header .logobox:hover {
+      opacity: .8; }
+  .header .banner i {
+    display: none; }
+  .header .banner li {
+    float: left;
+    margin-left: 85px;
+    line-height: 44px; }
+    .header .banner li a {
+      color: white;
+      font-size: 14px; }
+    .header .banner li img {
+      margin-top: 12px; }
+    .header .banner li:hover {
+      opacity: .8; }
+  .header .banner .fourli {
+    position: relative; }
+    .header .banner .fourli .country {
+      position: absolute;
+      display: none;
+      opacity: 0;
+      top: 46px;
+      left: -90px;
+      width: 200px;
+      background: #fbfbfb;
+      border-radius: 0 0 5px 5px;
+      padding: 6px 0; }
+      .header .banner .fourli .country td {
+        width: 100px;
+        text-align: center;
+        height: 34px;
+        line-height: 30px; }
+      .header .banner .fourli .country a {
+        font-size: 14px;
+        color: black; }
+  .header .banner li:last-child {
+    margin-right: 31px;
+    margin-top: -6px; }
+    .header .banner li:last-child:hover {
+      opacity: 1; }
+    .header .banner li:last-child input {
+      width: 200px;
+      height: 16px;
+      padding-bottom: 9px;
+      border: none;
+      border-bottom: 1px solid #fff;
+      background: black;
+      color: #fff;
+      background: url("../img/banner1.png") right 2px no-repeat;
+      line-height: 24px;
+      font-size: 14px;
+      text-indent: 5px;
+      outline: none; }
+    .header .banner li:last-child input::input-placeholder {
+      color: #aaa; }
+  .header .inputbox {
+    width: 42%;
+    height: 44px;
+    position: absolute;
+    left: 302px;
+    top: 0;
+    overflow: hidden;
+    display: none; }
+    .header .inputbox input {
+      width: 42%;
+      background: url("../img/banner1.png") no-repeat left 1px #000;
+      height: 20px;
+      border: none;
+      text-indent: 24px;
+      outline: none;
+      color: white;
+      position: absolute;
+      left: 606px;
+      top: 10px;
+      padding-bottom: 8px;
+      font-size: 14px; }
+    .header .inputbox input::input-placeholder {
+      color: #aaa; }
+
+@keyframes yy {
+  0% {
+    transform: rotate(0deg); }
+  50% {
+    transform: rotate(180deg); }
+  100% {
+    transform: rotate(360deg); } }
+.footer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  clear: both; }
+  .footer ul:first-child {
+    margin-left: 49px; }
+  .footer ul {
+    width: 100%;
+    flex: 1; }
+    .footer ul li:first-child {
+      font-size: 14px;
+      font-weight: 600;
+      color: #000;
+      margin-bottom: 10px; }
+    .footer ul li {
+      font-size: 12px;
+      height: 30px;
+      color: #666;
+      display: block; }
+      .footer ul li span {
+        display: none;
+        float: right;
+        margin-right: 10px; }
+  .footer .fivebox {
+    width: 318px;
+    height: 188px;
+    border-left: 1px solid #ddd;
+    margin-bottom: 90px;
+    margin-left: 15px; }
+    .footer .fivebox p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #000;
+      padding-left: 60px; }
+    .footer .fivebox a {
+      float: left;
+      width: 30px;
+      height: 30px;
+      margin-left: 75px;
+      padding-top: 33px;
+      position: relative; }
+      .footer .fivebox a:hover .w {
+        z-index: 2; }
+      .footer .fivebox a:hover .ewm {
+        display: block; }
+      .footer .fivebox a .w1 {
+        width: 30px;
+        height: 30px;
+        z-index: 1;
+        position: absolute; }
+      .footer .fivebox a .w {
+        width: 30px;
+        position: absolute;
+        height: 30px; }
+      .footer .fivebox a .ewm {
+        width: 110px;
+        position: absolute;
+        top: 65px;
+        left: -40px;
+        display: none; }
+
+.last {
+  background: #f5f5f5;
+  height: 44px;
+  width: 100%;
+  font-size: 12px;
+  text-align: center;
+  padding-top: 18px;
+  color: #444; }
+  .last p span {
+    display: none; }
+  .last p:last-child {
+    display: none; }
+
+.leftlargemovebox {
+  display: none;
+  width: 0;
+  float: left;
+  background: #000;
+  padding-top: 45px;
+  height: 100vh; }
+  .leftlargemovebox .leftlogobox {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #666; }
+    .leftlargemovebox .leftlogobox img {
+      width: 75px;
+      margin-left: 15px;
+      margin-top: 26px; }
+  .leftlargemovebox p {
+    height: 60px;
+    line-height: 60px;
+    text-indent: 15px;
+    border-bottom: 1px solid #666; }
+    .leftlargemovebox p a {
+      font-size: 14px;
+      color: white; }
+  .leftlargemovebox p:last-child {
+    color: #fff;
+    font-size: 22px; }
+    .leftlargemovebox p:last-child span {
+      float: right;
+      margin-right: 20px; }
+
+.rightlargemovebox {
+  width: 100%;
+  float: left;
+  position: relative; }
+
+.rfog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.6);
+  display: none; }
+  .rfog i {
+    position: absolute; }
+
+.asidfixed {
+  position: fixed;
+  right: 6px;
+  bottom: 50px; }
+  .asidfixed a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0; }
+    .asidfixed a:hover {
+      background: black; }

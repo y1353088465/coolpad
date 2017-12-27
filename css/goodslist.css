@@ -1,0 +1,62 @@
+.secone {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 609px; }
+  .secone .imglist {
+    width: 7590px;
+    position: absolute;
+    left: 0;
+    top: 0; }
+    .secone .imglist li {
+      float: left;
+      overflow: hidden; }
+      .secone .imglist li a {
+        display: block;
+        width: 1265px;
+        height: 609px;
+        background: url("../img/1.jpg") center center no-repeat;
+        background-size: 1265px 609px; }
+  .secone .dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+    z-index: 1; }
+    .secone .dots a {
+      float: left;
+      width: 50px;
+      height: 3px;
+      background: #bbb;
+      margin: 0 5px; }
+      .secone .dots a .gray {
+        height: 3px;
+        background: #333;
+        width: 0; }
+
+.picbox {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 90%; }
+  .picbox h2 {
+    font-size: 18px;
+    text-indent: 100px;
+    line-height: 66px; }
+  .picbox a {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    height: 320px;
+    width: 48%;
+    margin: 1%; }
+    .picbox a:hover .twopic {
+      width: 630px;
+      height: 350px; }
+    .picbox a .onepic {
+      position: absolute;
+      top: 35%;
+      left: 20%; }
+    .picbox a .twopic {
+      height: 320px;
+      width: 600px;
+      transition: all 0.5s; }
